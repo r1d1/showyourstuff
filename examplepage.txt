@@ -1,0 +1,8 @@
+[title]Page of example for the website engine[/title]
+[content]This page explains how works the small website engine that generate this website. The engine is called [b]SYS[/b], which stands for [i]Show Your Stuff ![/i]. It allows to build flat websites (where every page is accessible for every other) to simply present your content.
+The engine uses text files to handle content and configuration. There is one important file called "config.txt". This file indicates which are the pages in your website and where is their content. It also defines the top title and the bottom information.
+[b]WIP ! to improve ![/b]
+[/content]
+[supplementary]
+[img]http://fc07.deviantart.net/fs71/f/2011/041/4/6/young_dragon_by_anurenwaedor-d398yqa.jpg[/img]
+[/supplementary]

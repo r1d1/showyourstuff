@@ -1,0 +1,4 @@
+[title]Website Project[/title]
+[subtitle]Website catch phrase ![/subtitle]
+[menu][item]index,Home[/item][item]examplepage,Example Page[/item][item]index,Another item that goes back to Home page[/item][/menu]
+[bottom]Bottom legal stuff, mentions, etc.[/bottom]

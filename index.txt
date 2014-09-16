@@ -1,0 +1,13 @@
+[title]Project Rationale[/title]
+[content]
+Despite major progress in robotics and AI, we still lack a genuine theory of the underlying principles and methods that would enable robots to understand their environment, to be cognisant of what they do, to take appropriate and timely initiatives, to be able to reason and decide on their own - without being requested for, to [b]learn from their own experience[/b] and to know what they learned.
+
+The rationale of this project is that there is an intricate relationship - that we want to investigate - between an agent's consciousness, or self-awareness, and the interaction between the mind-body of this agent and its environment. That the understanding of its environment by the agent requires self-awareness, which actually is itself emerging as a result of this understanding and the distinction that the agent is capable to make between its own mind-body and its environment.
+
+We are interested in robotics agents, i.e., physical machines with perceptual, computational and action capabilities. We define the Object environment as external to the physical body of the robot and perceived by its sensors, which includes its Subject environment, on which the agent's action is or can be exerted and its Social environment, the other active agents with which it can interact. This a priori decomposition is proposed to better understand the connection between the agent's actions and its consciousness, but will be validated along the project.
+[/content]
+[supplementary]
+We contend that [b]self-awareness[/b] is necessary to make a robot able to understand its environment, to make decisions and take timely initiatives, to learn from its own experience and to assess what it learned.
+
+Our goal in this project is to explore this assertion and to demonstrate it with experimental proofs of concepts.
+[/supplementary]
