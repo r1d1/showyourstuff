@@ -1,7 +1,9 @@
 [pagetitle]Example page for the website engine[/pagetitle]
 [content]This page explains how works the small website engine that generate this website. The engine is called [b]SYS[/b], which stands for [i]Show Your Stuff ![/i]. It allows to build flat websites (where every page is accessible for every other) to simply present your content.
 
-The engine uses text files to handle content and configuration. There is one important file called "config.txt". This file indicates which are the pages in your website and where is their content. It also defines the top title and the bottom information.
+The engine uses text files to handle content and configuration. There is one important file called "config.txt". This file indicates which are the pages in your website and where is their content. It also defines the top title and the bottom information. Then, each page content has its own page with the content, a page title and a supplementary area to put more information.
+
+In these page content files, you can use BBcode style markup to apply style ([b]bold[/b], [i]italic[/i], [u]etc.[/u]), create [link={http://www.google.com} text={links} /link] and embed images (check on right column). Handling BBcode is a WIP thus the style you want may not be implemented now (but feel free to improve the style function in the right file if you know about website coding :)).
 [b]WIP ! to improve ![/b]
 [/content]
 [supplementary]
