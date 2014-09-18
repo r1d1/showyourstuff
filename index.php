@@ -3,9 +3,10 @@
 ?>
 
 <!--div class="uberElement"-->
-	<h3><?php echo AppliquerStyle($pagetitle); ?></h3>
 	<div class="corpscolumn"><?php echo AppliquerStyle($pagesupp); ?></div>
 	<div class="corps">	
+		<h3><?php echo AppliquerStyle($pagetitle); ?></h3>
+		<p>
 		<?php
 			//echo $pagereq;
 			//$pageContent = file($pagereq.'.txt');
@@ -29,12 +30,10 @@
 			//$texteastyler = preg_replace("#\[/content\]#i", "</p>", $texteastyler); /* content 
 		
 		?>
+		</p>
 	</div>
 	
 
 <?php
 	include('finpage.php');
 ?>
-
-</body>
-</html>

@@ -51,11 +51,16 @@ function extractMenu($rawText)
 
 function extractContent($rawText)
 {
-	$gluedText = implode('<br />',$rawText);
+//	$gluedText2 = implode('<br />',$rawText);
+	$gluedText = implode('',$rawText);
+//	echo "--".$gluedText."<br />";
+//	echo "--".$gluedText2."<br />";
 
 	preg_match('`\[pagetitle\](.+?)\[\/pagetitle\]`ms',$gluedText,$pagetitleresult);
 	preg_match('`\[content\](.+?)\[\/content\]`ms',$gluedText,$contentresult);
 	preg_match('`\[supplementary\](.+?)\[\/supplementary\]`ms',$gluedText,$pagesuppresult);
+
+//	echo "--".$pagetitleresult[1]."--".$contentresult[1]."--".$pagesuppresult[1]."--<br />";
 
 	return array($pagetitleresult[1],$contentresult[1],$pagesuppresult[1]);
 }
