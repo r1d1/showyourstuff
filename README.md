@@ -20,5 +20,5 @@ No defined term planning :
 * Long term : include markdown support ?
 
 Third party libraries :
-* [phpBibLib])(https://people.mmci.uni-saarland.de/~jilles/prj/phpBibLib/) from Jilles Vreecken
+* [phpBibLib](https://people.mmci.uni-saarland.de/~jilles/prj/phpBibLib/) from Jilles Vreecken
 * ...
