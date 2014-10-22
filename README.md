@@ -7,7 +7,7 @@ It is a text file based engine using forum-like formatting (BBcode like `[b][/b]
 ### This is WIP !!! Be careful when using ! ###
 -----------------------------------------
 
-**current version :** a.9 (alpha)
+**Current version :** a.9 (alpha)
 
 -----------------------------------------
 
