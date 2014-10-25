@@ -1,0 +1,8 @@
+[pagetitle]News on the project[/pagetitle]
+[content]
+[b]Website is online[/b]
+08 October 2014
+[i]The website has been released.[/i]
+[/content]
+[supplementary]
+[/supplementary]

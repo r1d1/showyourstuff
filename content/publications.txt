@@ -1,0 +1,10 @@
+[pagetitle]Publications[/pagetitle]
+[content]
+
+This page is generated thank to the [link={https://people.mmci.uni-saarland.de/~jilles/prj/phpBibLib} text={phpBibLib} /link] from Jilles Vreeken.
+
+[publicationList]references.bib[/publicationList]
+[/content]
+[supplementary]
+[/supplementary]
+

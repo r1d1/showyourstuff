@@ -1,0 +1,10 @@
+[pagetitle]Index page title ! This is where you come when typing the website url ![/pagetitle]
+[content]
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et c'est trop Cool ! Nulla viverra quam vestibulum, tincidunt sem non, auctor leo. Integer pharetra ante vitae lacus facilisis, non viverra mi ultricies. Duis commodo, libero nec tincidunt auctor, orci elit semper sapien, vitae gravida nisi enim a arcu. In at feugiat ex, in malesuada mi. Fusce in dolor venenatis, rhoncus ipsum at, pellentesque libero. 
+[b]Lorem ipsum dolor sit amet, -- Soit redit en passant -- consectetur adipiscing elit[/b]. Nulla viverra quam vestibulum, tincidunt sem non, auctor leo. Integer pharetra ante vitae lacus facilisis, non viverra mi ultricies. Duis commodo, libero nec tincidunt auctor, orci elit semper sapien, vitae gravida nisi enim a arcu. In at feugiat ex, in malesuada mi. Aenean consectetur purus at tristique finibus. Morbi pretium placerat felis nec maximus. Praesent mollis elementum nibh. Mauris at ullamcorper justo. Pellentesque molestie maximus ex sed euismod. Fusce euismod accumsan fermentum. Aenean tincidunt nunc et quam faucibus tempor. Nulla libero nisi, vulputate quis ante lacinia, tempus posuere est.
+[/content]
+[supplementary]
+[i]Proin sed lorem sagittis, pulvinar odio sed, tincidunt massa. Fusce condimentum eros vel accumsan tempus. Cras mattis velit sit amet lacus condimentum lacinia. Pellentesque molestie sed nunc id fermentum. Nam nec nulla sit amet erat aliquet varius. Etiam luctus tellus et sagittis consequat. Donec sollicitudin porttitor diam, vitae convallis nibh gravida non. Aliquam erat volutpat[/i].
+Donec sollicitudin id arcu et fermentum. Nunc vel ante ut dolor luctus lacinia. Praesent ac venenatis risus, at bibendum est. Nulla facilisi. Sed sodales interdum massa in convalli
+[/supplementary]
+
