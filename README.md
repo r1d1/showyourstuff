@@ -4,10 +4,11 @@ Show Your Stuff
 SYS is a simple website engine to Show Your Stuff even if your are not a code-buddy !
 It is a text file based engine using forum-like formatting (BBcode like `[b][/b]`, `[img][/img]` ...)
 
-### This is WIP !!! Be careful when using ! ###
+### This is WIP !!! Be careful when using ! ###.
 -----------------------------------------
 
-**Current version :** a.9 (alpha)
+**Current version :** b.1 (beta)
+**History :** a.9 (alpha)
 
 -----------------------------------------
 
@@ -19,6 +20,11 @@ No defined term planning :
 * add improve publications support
 * Long term : include markdown support ?
 
+! Requires PHP 5+ !
+
 Third party libraries :
 * [phpBibLib](https://people.mmci.uni-saarland.de/~jilles/prj/phpBibLib/) from Jilles Vreecken
 * ...
+
+Version history :
+18 Nov. 2014 : beta release
