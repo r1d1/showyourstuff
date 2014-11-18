@@ -11,6 +11,7 @@ ShowYourStuff requires at least PHP 5.
 -----------------------------------------
 
 **Current version :** b.1 (beta)
+
 **History :** a.9 (alpha)
 
 -----------------------------------------
