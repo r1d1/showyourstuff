@@ -2,6 +2,6 @@
 	<p>
 		<hr />
 		<br />
-		<?php echo AppliquerStyle($bottom); ?>
+		<?php echo $bottom; ?>
 	</p>
 </div>

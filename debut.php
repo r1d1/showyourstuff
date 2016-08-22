@@ -1,6 +1,7 @@
 <?php
-/* Début de session */
+/* Session start, character encoding forcing */
 session_start();
+header('Content-type: text/html; charset=utf-8');
 
 // getting file processing functions : 
 require("fonctions.php");
@@ -45,7 +46,8 @@ $pagesupp = $content[2];
 	<title><?php echo $title.' - '. $pagetitle; ?></title>
 	<meta name="keyworks" content="none" />
 	<meta name="author" content="R1D1" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+	<!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /-->
 
 	<link rel="stylesheet" media="screen" type="text/css" title="SYScss" href="syscss.css" />
 	<link rel="stylesheet" type="text/css" href="phpBibLib/bibtex.css" />

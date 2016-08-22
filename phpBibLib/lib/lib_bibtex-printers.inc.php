@@ -51,7 +51,7 @@ abstract class BasePrinter {
 
 
 	function StartBibliographyCitationStr() {
-		return "\t" . "\t" .'<td class="bibtex-citation">';
+		return "\t" . "\t" .'<td class="bibtex-citation">&#8226; ';
 	}
 	function EndBibliographyCitationStr() {
 		return '</td>' . "\n";

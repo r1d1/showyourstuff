@@ -5,14 +5,16 @@
 // Text enhancing
 function AppliquerStyle($rawText)
 {
-//	echo $rawText;
+//	echo $rawText.'<br /><hr /><hr />';
 	/* Application du Style */
 	//$rawText = stripslashes(nl2br($rawText));
 	
 	// Check here for Line break issue !
 	
-	$rawText = preg_replace('~\s*<br ?/?>\s*~',"<br />",$rawText); 
-	$rawText = nl2br($rawText);
+	preg_match('~\s*<br ?/?>\s*~',$rawText, $matches); 
+//	echo count($matches).'<br />';
+	/*$rawText = preg_replace('~\s*<br ?/?>\s*~',"<br />",$rawText); */
+//	$rawText = nl2br($rawText);
 
 //	echo $rawText;
 
@@ -29,11 +31,15 @@ function AppliquerStyle($rawText)
 	$rawText = preg_replace("#\[b\](.+?)\[/b\]#msi", "<strong>$1</strong>", $rawText); /* Bold */
 	$rawText = preg_replace("#\[i\](.+?)\[/i\]#msi", "<em>$1</em>", $rawText); /* Italic  */
 	$rawText = preg_replace("#\[u\](.+?)\[/u\]#msi", "<u>$1</u>", $rawText); /* Underlining */
+	// DOes nothing !
+	$rawText = preg_replace("#\[center\](.+?)\[/center\]#msi", "<span class=\"centered\">$1</span>", $rawText); /* Underlining */
 
 	// Implement lists !
 
 	/* Balises d'inclusion d'éléments divers */		
-	$rawText = preg_replace("#\[img\](.+?)\[/img\]#i", "<img src=\"$1\" class=\"sizedimg\" />", $rawText);		/* Remplacement des balises IMAGE */
+	$rawText = preg_replace("#\[img\](.+?)\[/img\]#i", "<img src=\"$1\" class=\"standardimg\" />", $rawText);		/* Remplacement des balises IMAGE */
+	$rawText = preg_replace("#\[imgmH\](.+?)\[/imgmH\]#i", "<img src=\"$1\" class=\"sizedimgH\" />", $rawText);		/* Remplacement des balises IMAGE miniature */
+	$rawText = preg_replace("#\[imgmV\](.+?)\[/imgmV\]#i", "<img src=\"$1\" class=\"sizedimgV\" />", $rawText);		/* Remplacement des balises IMAGE miniature */
 	$rawText = preg_replace("#\[miniature\](.+?)\[/miniature\]#i","", $rawText);/* Remplacement des balises MINIATURE */
 
 	$rawText = str_replace("[link={","<a href=\"",$rawText);				/* ouverture de lien */
@@ -42,7 +48,9 @@ function AppliquerStyle($rawText)
 	$rawText = str_replace("[line]","<hr />",$rawText);
 
 	/*--------------------------------------------------------------------------------------------------------------------*/
-	
+
+//	echo $rawText;
+
 	return $rawText; 
 }
 
@@ -62,7 +70,18 @@ function extractMenu($rawText)
 {
 	preg_match_all('`\[item\](.+?)\[/item\]`msi', $rawText, $splittedmenu);
 
-	foreach($splittedmenu[1] as $item){ $menuline = explode(',',$item); }
+	foreach($splittedmenu[1] as $item)
+	{
+		$menuline = explode(',',$item);
+		$menuline = str_replace(' ', '&#8239;', $menuline);
+	//	echo $menuline[1].'<br />';
+		$item = implode(',', $menuline);
+		
+	}
+	/*foreach($splittedmenu[1] as $item)
+	{
+		echo $item.'<br />';
+	}*/
 
 	return $splittedmenu[1];
 }
@@ -70,7 +89,11 @@ function extractMenu($rawText)
 function extractContent($rawText)
 {
 //	$gluedText2 = implode('<br />',$rawText);
-	$gluedText = implode('',$rawText);
+/*	foreach($rawText as $line)
+	{
+		echo 'line : '.$line.'<br />';
+	} */
+	$gluedText = implode('<br />',$rawText);
 //	echo "--".$gluedText."<br />";
 //	echo "--".$gluedText2."<br />";
 
@@ -78,13 +101,16 @@ function extractContent($rawText)
 	preg_match('`\[content\](.+?)\[\/content\]`ms',$gluedText,$contentresult);
 	preg_match('`\[supplementary\](.+?)\[\/supplementary\]`ms',$gluedText,$pagesuppresult);
 
-//	echo "--".$pagetitleresult[1]."--".$contentresult[1]."--".$pagesuppresult[1]."--<br />";
+//	echo "--".$pagetitleresult[1]."<br />".$contentresult[1]."<br />".$pagesuppresult[1]."--<br />";
+//	preg_match('\n', $contentresult[1], $matches);
+//	echo $matches.' '.count($matches);
 
 	return array($pagetitleresult[1],$contentresult[1],$pagesuppresult[1]);
 }
 
 function processPublications($rawText)
 {
+//	echo $rawText.'<br /><hr /><hr />';
 	// Load Lib :
 	require_once('./phpBibLib/lib/lib_bibtex.inc.php');
 
@@ -97,20 +123,21 @@ function processPublications($rawText)
 		$bib = new Bibtex($bibfile);
 
 		// Set Order and Style :
-		$bib->SetBibliographyStyle('natbib');
 		$bib->SetBibliographyOrder('year');
+		$bib->SetBibliographyStyle('natbib');
 
 		$bib->SelectAll();
 		$bib->PrintBibliography();
 	}
 
-	//echo $rawText;
+//	echo $rawText;
 
 	return $rawText;
 }
 
 function processCitations($rawText)
 {
+//	echo $rawText.'<br /><hr /><hr />';
 	// Load Lib :
 	require_once('./phpBibLib/lib/lib_bibtex.inc.php');
 
@@ -123,6 +150,7 @@ function processCitations($rawText)
 	$bib = new Bibtex($bibfile);
 
 	// Set Order and Style :
+	//$bib->SetBibliographyStyle('natbib');
 	$bib->SetBibliographyStyle('numeric');
 	$bib->SetBibliographyOrder('usage');
 

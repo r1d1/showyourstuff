@@ -6,7 +6,9 @@
 	<div class="corps">	
 		<h3><?php echo AppliquerStyle($pagetitle); ?></h3>
 		<p>
-		<?php echo AppliquerStyle(processPublications(processCitations($pagemain))); ?>
+		<?php
+		echo AppliquerStyle(processPublications(processCitations($pagemain)));
+		?>
 		</p>
 	</div>
 	

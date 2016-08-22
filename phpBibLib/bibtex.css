@@ -41,6 +41,7 @@
 .bibtex-publisher {
 }
 .bibtex-year {
+	font-weight: bold;
 }
 
 .bibtex-journal {

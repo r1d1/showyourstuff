@@ -38,7 +38,9 @@ a:visited { color: #9999FF; }
 #claim { background-color: #AAAAAA; padding: 15px; color: Navy; }
 #claim #important { font-weight: bold; }
 
-.sizedimg{ max-width: 200px; height: auto; }
+.sizedimgH{ max-width: 200px; height: auto; }
+.sizedimgV{ max-height: 125px; width: auto; }
+.standardimg{ max-width: 60%; height: auto; display: block; }
 
 .menu { margin: 10px; margin-bottom: 5px; text-align: center; border-top: 3px solid #CCCCCC; border-bottom: 3px solid #AAAAAA; }
 .menu ul { text-align: center; /*border: 2px solid #0000FF;*/ }
