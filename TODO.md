@@ -6,5 +6,7 @@
 - use example-content & content folder, check if content is empty then use example-content
 - have a file describing the website structure ?
 
+- support Markdown (rather than custom BBCode?)
+
 - Automate the publication process, the framework git/release cycle
 - host everything on a personal serv? (Later)
