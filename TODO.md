@@ -1,5 +1,6 @@
 # Task list
 
+- revise default and custom styles
 - convert to HTML5
 - reorganize php files
 - rename to english

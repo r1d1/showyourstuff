@@ -16,7 +16,6 @@ else
 }
 
 // generate menu structure :
-//$configuration=file('config.txt');
 $dynamicmenu=file('config.txt');
 $pagecontent=file('content/'.$pagereq.'.txt');
 
@@ -32,8 +31,6 @@ $content=extractContent($pagecontent); // extract page specific content
 $pagetitle = $content[0];
 $pagemain = $content[1];
 $pagesupp = $content[2];
-
-//echo "MEtadata : ".$title." ".$pagereq;
 
 ?>
 
@@ -57,10 +54,6 @@ $pagesupp = $content[2];
 <body>
 <!-- beginning of uberElement-->
 <div class="uberElement">
-
-<!-- ?php
-	include('debut.php');
-? -->
 
 <?php
 	/* on rajoute les élements annexes */

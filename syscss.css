@@ -7,7 +7,10 @@ a:hover { color: LightBlue; text-decoration: underline; }
 a:visited { color: #9999FF; }
 
 /* Boxing element that contains everything */
-.uberElement {  width: 90%;
+.uberElement {
+        width: 800px;
+        /*min-width: 400px;
+        max-width: 30%;*/
 		/*background-color: #eeeeee;*/
 		background-image:-moz-linear-gradient(bottom, #000033, rgba(0,0,192,0.0));
 		background-image:-webkit-linear-gradient(bottom, #999999, rgba(0,0,192,0.0));
